@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>📟Tobi Onipede</title>
+		
+	</head>
+	<body>
+		<%- include('./partials/headers.ejs') %>
+		<h1>Welcome to blog alley!!</h1>
+
+    <form action="/newBlog"  method="Post">
+      
+      <label for="Title"> Title of Post</label>
+      <input type="text" name="blogTitle">
+      <br>
+      <label for="Descripton">Enter your post</label>
+      <br>
+      <textarea name="blogpost" id="" cols="50" rows="10"></textarea>
+      <br>
+      <input type="submit" >
+
+    </form>
+
+		<%- include('./partials/footer.ejs') %>
+	</body>
+</html>

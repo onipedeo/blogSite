@@ -1,0 +1,17 @@
+.full-body {
+	background-color: #9ad4d6;
+  
+}
+p {
+	color: black;
+}
+
+.home-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.blog-landscape {
+	width: 100vw;
+	height: 100vh;
+}
