@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('./partials/head.ejs') %>
+	</head>
+	<body>
+		<%- include('./partials/headers.ejs') %>
+
+		<P>Thank you, <%= name %> for contacting me. I will get in touch within the next 48hours!.</P>
+		<p>Ths page will redirect you to the home page!</p>
+
+    <%- include('./partials/footer.ejs') %>
+		<script>
+			setTimeout(() => {
+				window.location = "/";
+			}, 15000);
+		</script>
+	</body>
+</html>
