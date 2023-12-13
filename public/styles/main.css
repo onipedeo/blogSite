@@ -1,9 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Mono:wght@100&family=Source+Sans+3:ital,wght@0,300;0,600;1,300;1,600&display=swap");
+
+/* font-family: "Bungee", sans-serif; 
+	font-family: "Roboto Mono", monospace; 
+	font-family: "Source Sans 3", sans-serif; 
+
+	*/
+
+:root {
+	--black: #1c1c1c;
+	--gray: #7e7e7e;
+	--gray-light: #e4e4e4;
+	--red: #b30000;
+	--font-size-base: 1rem;
+	--font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+	--font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+	--font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+	--border-radius: 10px;
+}
+
 .full-body {
+	/* font-family: "Roboto Mono", monospace;   */
 	background-color: #9ad4d6;
-  
 }
 p {
-	color: black;
+	color: var(--black);
 }
 
 .home-container {
