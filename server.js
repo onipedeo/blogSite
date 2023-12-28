@@ -28,7 +28,10 @@ const sendEmail = async (formData) => {
 	});
 
 	await transporter.sendMail({
-		from: `${formData.name}	<${formData.email}>`,
+		from: {
+			name: `${formData.name}, ${formData.email}`,
+			address: `${formData.email}`,
+		},
 		to: process.env.RECEIVING_EMAIL,
 		subject: "",
 		html: `<p>${formData.message}
@@ -49,7 +52,7 @@ app.get("/projects", (req, res) => {
 });
 
 app.get("/blog", (req, res) => {
-	res.render("blog.ejs", {blog: blog});
+	res.render("blog.ejs");
 });
 
 app.get("/contactme", (req, res) => {

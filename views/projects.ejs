@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<%- include('./partials/head.ejs') %>
+		<%- include('./partials/head.ejs') %>
 	</head>
 	<body class="full-body">
 		<%- include('./partials/headers.ejs') %>
-		<h1>Projects</h1>
-		<div class="projectList">
-			<h3>InvoiceForge</h3>
-			<p>summary of the project</p>
-			<img src="/images/invoiceForge.png" alt="homepage of the app" />
-			<!-- key tech stack used -->
-			<span>Node JS</span>
-			<span>Javascript</span>
-			<span>Express</span>
-			<span>React</span>
-			<span>Knex</span>
+		<div class="container">
+			<h1>Projects</h1>
+			<div class="row ">
+				<div class="card col projectList">
+					<h3>InvoiceForge</h3>
+					<p>summary of the project</p>
+					<img
+						class="img-circle"
+						src="/images/invoiceForge.png"
+						alt="homepage of the app"
+					/>
+					<!-- key tech stack used -->
+					<span>Node JS</span>
+					<span>Javascript</span>
+					<span>Express</span>
+					<span>React</span>
+					<span>Knex</span>
+				</div>
+				<div class="card col projectList">
+					<h3>InvoiceForge</h3>
+					<p>summary of the project</p>
+					<img
+						class="img-circle"
+						src="/images/invoiceForge.png"
+						alt="homepage of the app"
+					/>
+					<!-- key tech stack used -->
+					<span>Node JS</span>
+					<span>Javascript</span>
+					<span>Express</span>
+					<span>React</span>
+					<span>Knex</span>
+				</div>
+			</div>
 		</div>
 
 		<%- include('./partials/footer.ejs') %>

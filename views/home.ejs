@@ -5,26 +5,32 @@
 	</head>
 	<body class="full-body">
 		<%- include('./partials/headers.ejs') %>
-		<div class="home-container">
-			<h3>FULL STACK DEVELOPER</h3>
-			<img src="/images/Tobi.png" alt="image of Tobi Onipede" />
-			<p>Hi there!</p>
-			<p>
-				I am Tobi Onipede, a full-stack web/software developer with over
-				2 years experience based in Ottawa, Ontario. I am currently
-				specialized in React and Node.js
-			</p>
-			<p>
-				I am actively seeking opportunities in web and software
-				development. I am passionate about leveraging my skills to
-				contribute to innovative projects and create impactful
-				solutions. Please feel free to explore my portfolio and get in
-				touch to discuss potential collaborations or opportunities.
-			</p>
+		<div class="container home-container">
+			<img
+				class="image"
+				src="/images/Tobi.png"
+				alt="image of Tobi Onipede"
+			/>
+			<div class=" writeup">
+				<h3 >FULL STACK DEVELOPER</h3>
+				<p>Hi there!</p>
+				<p>
+					I am Tobi Onipede, a full-stack web/software developer with
+					over 2 years experience based in Ottawa, Ontario. I am
+					currently specialized in React and Node.js
+				</p>
+				<p>
+					I am actively seeking opportunities in web and software
+					development. I am passionate about leveraging my skills to
+					contribute to innovative projects and create impactful
+					solutions. Please feel free to explore my portfolio and get
+					in touch to discuss potential collaborations or
+					opportunities.
+				</p>
 
-			<a href="/about">About Me</a>
-
-			<%- include('./partials/footer.ejs') %>
+				<a href="/about">About Me</a>
+			</div>
 		</div>
+		<%- include('./partials/footer.ejs') %>
 	</body>
 </html>
